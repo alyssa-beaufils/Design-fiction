@@ -1,0 +1,13 @@
+.text-big{ @include font-size-responsive(24px, 20px, 32px); }
+.log{ @include font-size-responsive(14px, 16px, 16px); }
+
+.text-big{
+  font-family: $font-primary;
+  color: $color-tertiary;
+  font-weight: 400;
+}
+
+.log{
+  font-family: $font-tertiary;
+  color: $color-tertiary;
+}

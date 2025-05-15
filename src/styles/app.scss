@@ -1,2 +1,14 @@
-@import 'utils/variables';
-@import 'components/type';
+// import des fichiers utilitaires (variables, mixins, functions…)
+@import "utils/mixins";
+@import "utils/functions";
+@import "utils/variables";
+ 
+// import des mises en page (grilles, sections…)
+@import "layout/global";
+@import "layout/navigation";
+@import "layout/gridd";
+@import "layout/img";
+@import "layout/design";
+ 
+// import des styles de base
+@import "components/typography";
