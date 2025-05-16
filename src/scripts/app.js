@@ -32,6 +32,12 @@ gsap.registerPlugin(ScrollTrigger);
             feedback.classList.add("visible");
             passwordInput.value = ""; // réinitialise le champ de mot de passe
             attempts = 0; // réinitialise le nombre de tentatives
+
+            form.querySelector("button[type='submit']").disabled = true;
+
+            setTimeout(() => {
+            window.location.href = "../home.html";
+        }, 3000); // délai de 1.5 seconde pour que le message s'affiche
         }
 
         else {
@@ -51,6 +57,7 @@ gsap.registerPlugin(ScrollTrigger);
         passwordInput.value = ""; // réinitialise le champ de mot de passe
         }
         }
+
     });
 
     
