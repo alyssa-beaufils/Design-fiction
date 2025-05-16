@@ -11,27 +11,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/app.css">
-
-  <script src="scripts/app.js" defer></script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Homenaje&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+  
+  <script src="scripts/app.js" defer></script>
 </head>
 <body>
-  
-  <div class="user-infos">
+
+  <div class="login-components">
     <img src="../assets/images/pfp-admin.webp" alt="Profile picture" class="pfp"/>
     <h2 class="text-big">?*$</h3>
+    
+    <form class="form-group" id="form-group">
+      <p class="feedback" id="feedback"></p>
+      <input type="password" class="password" id="password" placeholder="Password"/>
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+
+    <p class="log">Bondly - Admin access</p>
   </div>
   
-  <div class="form-group">
-    <input type="password" class="password" id="password" placeholder="Password"/>
-    <button type="submit" class="login-btn">Login</button>
-  </div>
-
-  <p class="log">Bondly - Admin access</p>
-
 </body>
 </html>
