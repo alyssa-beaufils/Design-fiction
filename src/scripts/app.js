@@ -1,12 +1,27 @@
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+'use strict';
 
-gsap.registerPlugin(ScrollTrigger);
+//ZONE CLIQUABLE SUR ÉCRAN PC
+
+    document.addEventListener('DOMContentLoaded', () => {
+    
+        const clickArea = document.getElementById("click-area");
+        
+        if (clickArea) {
+            clickArea.addEventListener("click", function(e) {
+                e.preventDefault();
+                window.location.href = "../login.html";
+            }); 
+        }  
+    });
+
+//SCRIPT POUR LE MDP
 
     const correctPassword = "1234";
     const feedback = document.getElementById("feedback");
     const passwordInput = document.getElementById("password");
     const form = document.getElementById("form-group");
+
+    if (form) {
 
     const clues = [
         "What comes after zero?",
@@ -36,8 +51,8 @@ gsap.registerPlugin(ScrollTrigger);
             form.querySelector("button[type='submit']").disabled = true;
 
             setTimeout(() => {
-            window.location.href = "../home.html";
-        }, 3000); // délai de 1.5 seconde pour que le message s'affiche
+                window.location.href = "../home.html";
+            }, 3000); // délai de 1.5 seconde pour que le message s'affiche
         }
 
         else {
@@ -58,10 +73,27 @@ gsap.registerPlugin(ScrollTrigger);
         }
         }
 
+    })};
+
+//BURGER MENU
+
+    var burgerMenu = document.getElementById('burger-menu');
+    var menu = document.getElementById('menu');
+
+    burgerMenu.addEventListener('click', function () {
+
+    menu.classList.toggle('active');
+    burgerMenu.classList.toggle('open');
     });
 
-    
+//SCRIPT POUR ACCESS DENIED
 
+    const restrictedLink = document.getElementById("restricted-link");
+    const message = document.getElementById("message");
 
+    if (restrictedLink) {
 
-
+    restrictedLink.addEventListener("click", function(e) {
+        e.preventDefault();
+        message.textContent = "Sorry, your current role doesn’t authorize access to this section.";
+    });}

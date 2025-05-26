@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BONDLY - TERMINAL</title>
+  <title>BONDLY - HOME</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -16,7 +16,32 @@
 </head>
 <body>
 
-  <h1>PAGE HOME</h1>>
+    <div class="menu-container">
+
+        <img src="../assets/images/pfp-admin.webp" alt="Profile picture" class="pfp"/>
+        <h2 class="text-nav">Admin access niv.2</h2>
+        
+        <!--MENU BURGER-->
+        <div class="burger-menu" id="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+    </div>
+        <!--MENU NAVIGATION-->
+
+    <nav class="menu" id="menu">
+        <ul class="menu__list">
+            <li class="menu__el"><a href="user-list.html"> User list </a></li>
+            <li class="menu__el"><a href="#" class="nav-disabled" id="restricted-link"> Flagged anomaly </a></li>
+            <li class="menu__el"><a href="#" class="nav-disabled" id="restricted-link"> Report </a></li>
+            <li class="menu__el"><a href="#" class="nav-disabled" id="restricted-link"> Logs </a></li>
+        </ul>
+    </nav>    
+
+    <div class="flex-container-centre">
+        <div class="message" id="message"></div>
+    </div>
 
 </body>
 </html>
