@@ -46,10 +46,17 @@
     font-size: 14px;
     color: $color-tertiary;
     background-color: $color-primary;
+    border: 1px solid $color-secondary;
     width: fit-content;
+    position: absolute;
     margin: 0;
     padding: 15px;
-    display: flex;
+    opacity: 0;
+    transition: opacity 1s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
 .burger-menu{
@@ -72,12 +79,20 @@
 }
 
 .menu{
-    display: none;
+    position: absolute;
+    opacity: 0;
     width: 100%;
     padding: 0;
     margin: 0;
     pointer-events: none;
     background-color: $color-primary;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu.active {
+    opacity: 1;
+    padding: 0;
+    pointer-events: all;
 }
 
 .menu__list{
@@ -104,11 +119,7 @@
     color: $color-secondary;
 }
 
-.menu.active {
-    display: block;
-    padding: 0;
-    pointer-events: all;
-}
+
 
 //ANIMATION BURGER MENU
 

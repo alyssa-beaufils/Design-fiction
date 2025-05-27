@@ -88,12 +88,24 @@
 
 //SCRIPT POUR ACCESS DENIED
 
-    const restrictedLink = document.getElementById("restricted-link");
+    const restrictedLinks = document.querySelectorAll(".restricted-link");
     const message = document.getElementById("message");
 
-    if (restrictedLink) {
+    if (restrictedLinks) {
+        
+        restrictedLinks.forEach( link => {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+                message.textContent = "Sorry, your current role doesn’t authorize access to this section.";
+                message.style.opacity = "1";
 
-    restrictedLink.addEventListener("click", function(e) {
-        e.preventDefault();
-        message.textContent = "Sorry, your current role doesn’t authorize access to this section.";
-    });}
+                setTimeout(() => {
+                message.style.opacity = "0";
+            }, 3000);
+
+            setTimeout(() => {
+                message.textContent = "";
+            }, 4000);
+            });
+        });
+    }
