@@ -11,6 +11,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Homenaje&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
   <script src="scripts/app.js" defer></script>
 </head>
@@ -39,9 +42,27 @@
         </ul>
     </nav>    
 
-    <div class="flex-container-centre">
-        <div class="message" id="message"></div>
+    <div class="message" id="message"></div>
+    
+    <h1 class="title-panel">TODAY'S TASK OVERVIEW</h1>
+
+    <div class="panel-container">
+        <img src="../assets/images/panel-mobile.svg" alt="Panel mobile" class="panel-mobile">
+
+        <h1 class="text-big-panel">ONGOING FILES</h1>
+        <p>8 active</p>
+        <p>3 urgent</p>
+
+        <h1 class="text-big-panel">TO BE EXAMINED TODAY</h1>
+
+        <h1 class="text-big-panel">CONFIDENTIAL NOTE</h1>
+        <p>File #9320 has deactivated all functions and notifications. Behavior is stable; however, the isolation appears to be self-imposed.</p>
     </div>
 
+    <div class="automated-message">
+        <p>Every day, you make a difference. We're proud to have you on our team! Keep up the great work.</p>
+        <p>– Bondly</p>
+        <p class="log">Automated message</p>
+    </div>
 </body>
 </html>

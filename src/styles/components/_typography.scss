@@ -1,13 +1,35 @@
 .text-big{ @include font-size-responsive(20px, 24px, 32px); }
-.text-nav{ @include font-size-responsive(16px, 18px, 20px); }
+.title-panel{ @include font-size-responsive(24px, 26px, 32px); }
+.text-big-panel{ @include font-size-responsive(20px, 24px, 32px); }
+.text-nav{ @include font-size-responsive(18px, 18px, 20px); }
 .log{ @include font-size-responsive(14px, 16px, 16px); }
 .feedback{ @include font-size-responsive(14px, 16px, 16px); }
+p{ @include font-size-responsive(16px, 18px, 18px); }
 
 .text-big{
   font-family: $font-primary;
-  color: $color-tertiary;
+  color: $color-secondary;
   font-weight: 400;
   font-style: normal;
+}
+
+.title-panel{
+  font-family: $font-primary;
+  color: $color-secondary;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 10vw;
+  margin-top: 48px;
+}
+
+
+.text-big-panel{
+  font-family: $font-primary;
+  color: $color-secondary;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 10vw;
+  margin-top: 48px;
 }
 
 .text-nav{
@@ -36,4 +58,13 @@
   display: block;
   margin: 0;
   padding: 0;
+}
+
+p{
+  font-family: $font-primary;
+  color: $color-tertiary;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 10vw;
+  margin-top: 48px;
 }
