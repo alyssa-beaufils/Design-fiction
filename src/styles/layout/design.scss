@@ -1,3 +1,26 @@
+//MOBILE FIRST
+
+.terminal-bondly{
+    background-color: $color-primary;
+    background-image: none;
+}
+
+.mobile-ui {
+  display: block;
+
+  @include responsive(desktop) {
+    display: none;
+  }
+}
+
+.desktop-ui{
+    display: none;
+
+    @include responsive(desktop) {
+    display: block;
+  }
+}
+
 .click-area{
     width: 500px;
     height: 500px;
@@ -71,4 +94,10 @@
 .danger-icon{
     width: 16px;
     height: 14px;
+}
+
+.msg{
+    background-color: $color-tertiary;
+    padding: 12px;
+    border-radius: 8px;
 }

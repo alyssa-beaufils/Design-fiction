@@ -1,3 +1,33 @@
+.user-info-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    border-bottom: 1px solid $color-tertiary;
+}
+
+.msg-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 2vw;
+    margin-top: 16px;
+}
+
+.send-msg{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid $color-tertiary;
+    bottom: 0;
+    padding: 5px;
+}
+
 .form-group{
     display: flex;
     flex-direction: column;

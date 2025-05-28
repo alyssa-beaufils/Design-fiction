@@ -80,11 +80,14 @@
     var burgerMenu = document.getElementById('burger-menu');
     var menu = document.getElementById('menu');
 
+    if (burgerMenu || menu) {
+
     burgerMenu.addEventListener('click', function () {
 
     menu.classList.toggle('active');
     burgerMenu.classList.toggle('open');
     });
+    }
 
 //SCRIPT POUR ACCESS DENIED
 
