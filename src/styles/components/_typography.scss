@@ -1,5 +1,10 @@
 .text-big{ @include font-size-responsive(20px, 24px, 32px); }
+.title-big{ @include font-size-responsive(24px, 24px, 32px); }
 .title-panel{ @include font-size-responsive(24px, 26px, 32px); }
+.file-title{ @include font-size-responsive(16px, 24px, 32px); }
+.title-log{ @include font-size-responsive(14px, 24px, 32px); }
+.status-title{ @include font-size-responsive(14px, 24px, 32px); }
+.status-title-diff{ @include font-size-responsive(14px, 24px, 32px); }
 .text-big-panel{ @include font-size-responsive(20px, 24px, 32px); }
 .text-nav{ @include font-size-responsive(18px, 18px, 20px); }
 .log{ @include font-size-responsive(14px, 16px, 16px); }
@@ -13,6 +18,14 @@ p{ @include font-size-responsive(16px, 18px, 18px); }
   font-style: normal;
 }
 
+.title-big{
+  font-family: $font-primary;
+  color: $color-tertiary;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 5vw;
+}
+
 .title-panel{
   font-family: $font-primary;
   color: $color-secondary;
@@ -20,6 +33,38 @@ p{ @include font-size-responsive(16px, 18px, 18px); }
   font-style: normal;
   margin-left: 10vw;
   margin-top: 48px;
+}
+
+.file-title{
+  font-family: $font-secondary;
+  color: $color-secondary;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 8px;
+}
+
+.title-log{
+  font-family: $font-tertiary;
+  color: $color-tertiary;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.status-title{
+  font-family: $font-tertiary;
+  color: $color-red;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 24px;
+}
+
+.status-title-diff{
+  font-family: $font-tertiary;
+  color: $color-orange;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 24px;
 }
 
 
@@ -65,6 +110,4 @@ p{
   color: $color-tertiary;
   font-weight: 400;
   font-style: normal;
-  margin-left: 10vw;
-  margin-top: 48px;
 }

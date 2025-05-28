@@ -134,3 +134,16 @@
 .burger-menu.open .burger-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-11px);
 }
+
+.bg-color{
+    background-color: $color-primary;
+    width: 90%;
+    margin-top: 48px;
+    margin-left: 5vw;
+    padding: 1px;
+}
+
+.danger-icon{
+    width: 16px;
+    height: 14px;
+}
