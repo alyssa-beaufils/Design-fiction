@@ -32,20 +32,30 @@
 }
 
 .password{
-    width: 350px;
-    height: 40px;
+    width: 250px;
+    height: 35px;
     border-radius: 15px;
     border: 3px solid #AAAAD1;
     background-image: url('../../assets/images/lock.svg');
     background-repeat: no-repeat;
     background-position: 16px center;
-    background-size: 24px 24px;
+    background-size: 18px 18px;
     padding-left: 46px;
 
     &::placeholder {
     font-family: $font-tertiary;  
+    font-size: 11px;
+
+    @include responsive(desktop) {
     font-size: 14px;
     }
+    }
+    
+    @include responsive(desktop) {
+    width: 350px;
+    height: 40px;
+    background-size: 24px 24px;
+  }
 }
 
 .login-btn{
@@ -54,7 +64,7 @@
     border-radius: 15px;
     border-style: none;
     font-family: $font-primary;
-    font-size: 18px;
+    font-size: 16px;
     color: $color-tertiary;
     background-color: $color-primary;
 
@@ -62,6 +72,10 @@
         background-color: $color-secondary;
         color: $color-tertiary;
     }
+
+    @include responsive(desktop) {
+    font-size: 20px;
+  }
 }
 
 .message{
