@@ -50,7 +50,7 @@
   margin-bottom: 48px;
 
   > *{
-        grid-column: 1 / -1; //utilisation de l'ia
+        grid-column: 1 / -1;
     }
 } 
 
@@ -63,6 +63,7 @@
     margin-left: 5vw;
     margin-top: 48px;
     padding: 3px;
+    cursor: pointer;
 }
 
 .card-disabled{
@@ -74,6 +75,7 @@
     margin-left: 5vw;
     margin-top: 48px;
     padding: 3px;
+    cursor: pointer;
 }
 
 .user-info{

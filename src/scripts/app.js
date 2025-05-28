@@ -101,11 +101,37 @@
 
                 setTimeout(() => {
                 message.style.opacity = "0";
-            }, 3000);
-
-            setTimeout(() => {
-                message.textContent = "";
             }, 4000);
+
+            });
+        });
+    }
+
+//SCRIPT POUR AVOIR ACCESS À LA PAGE USER PROFILE
+
+    const card = document.getElementById("card");
+    const cardDisabled = document.querySelectorAll(".card-disabled");
+    const messageOffline = document.getElementById("message-offline");
+
+    if (card) {
+
+        card.addEventListener("click", function(e) {
+            e.preventDefault();
+            window.location.href = "../user-profile.html";
+        });
+    }
+
+    if (cardDisabled) {
+        cardDisabled.forEach(card => {
+            card.addEventListener("click", function(e) {
+                e.preventDefault();
+                message.textContent = "Sorry, but this user is currently offline.";
+                message.style.opacity = "1";
+
+                setTimeout(() => {
+                    message.style.opacity = "0";
+                }, 4000);
+
             });
         });
     }
