@@ -54,47 +54,111 @@
 
             <div class="p-container">
                 <p>8 active</p>
+                <img src ="assets/images/danger-icon.svg" alt="danger icon" class="danger-icon panel">
                 <p>3 urgent</p>
             </div>
 
             <h1 class="text-big-panel">TO BE EXAMINED TODAY</h1>
 
-            <div class="p-container">
-                <p class="data-title">FILE ID</p>
-                <p class="data-title">#4873</p>
-                <p class="data-title">Anomaly type</p>
-                <p class="anomaly-info">Tendency toward social isolation</p>
-                <p class="data-title">Priority level</p>
-                <p class="priority-high">High</p>
-            </div>
+            <table class="table-mobile-ui">
+                <thead>
+                    <tr>
+                        <th class="title-table first">FILE ID</th>
+                        <td class="file-id first">#4873</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="title-table">Anomaly type</th>
+                        <td class="anomaly-type">Tendency toward social isolation</td>
 
-            <div class="p-container">
-                <p class="data-title">FILE ID</p>
-                <p class="data-title">#0012</p>
-                <p class="data-title">Anomaly type</p>
-                <p class="anomaly-info">Declining sociability level</p>
-                <p class="data-title">Priority level</p>
-                <p class="priority-medium">Medium</p>
-            </div>
+                    </tr>
 
-            <div class="p-container">
-                <p class="data-title">FILE ID</p>
-                <p class="data-title">#9320</p>
-                <p class="data-title">Anomaly type</p>
-                <p class="anomaly-info">Full passive mode</p>
-                <p class="data-title">Priority level</p>
-                <p class="priority-medium">Medium</p>
-            </div>
+                    <tr>
+                        <th class="title-table">Priority level</th>
+                        <td class="priority-high">High</td>
+
+                    </tr>
+                </tbody>
+
+                <thead>
+                    <tr>
+                        <th class="title-table">FILE ID</th>
+                        <td class="file-id">#0012</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="title-table">Anomaly type</th>
+                        <td class="anomaly-type">Declining sociability level</td>
+                    </tr>
+
+                    <tr>
+                        <th class="title-table">Priority level</th>
+                        <td class="priority-medium">Medium</td>
+                    </tr>
+                </tbody>
+
+                <thead>
+                    <tr>
+                        <th class="title-table">FILE ID</th>
+                        <td class="file-id">#9320</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="title-table">Anomaly type</th>
+                        <td class="anomaly-type">Full passive mode</td>
+                    </tr>
+
+                    <tr>
+                        <th class="title-table">Priority level</th>
+                        <td class="priority-medium">Medium</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <table class="table-desktop-ui">
+                <thead>
+                    <tr>
+                        <th class="title-table">FILE ID</th>
+                        <td class="file-id">#4873</td>
+                        <td class="file-id">#0012</td>
+                        <td class="file-id">#9320</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="title-table">Anomaly type</th>
+                        <td class="anomaly-type">Tendency toward social isolation</td>
+                        <td class="anomaly-type">Declining sociability level</td>
+                        <td class="anomaly-type">Full passive mode</td>
+                    </tr>
+
+                    <tr>
+                        <th class="title-table">Priority level</th>
+                        <td class="priority-high">High</td>
+                        <td class="priority-medium">Medium</td>
+                        <td class="priority-medium">Medium</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <h1 class="text-big-panel">CONFIDENTIAL NOTE</h1>
-            <p>File #9320 has deactivated all functions and notifications. Behavior is stable; however, the isolation appears to be self-imposed.</p>
+            <p class="confidential-note">File #9320 has deactivated all functions and notifications. Behavior is stable; however, the isolation appears to be self-imposed.</p>
         </div>
     </div>
 
     <div class="automated-message">
-        <p>Every day, you make a difference. We're proud to have you on our team! Keep up the great work.</p>
-        <p>– Bondly</p>
-        <p class="log">Automated message</p>
+        <img src="assets/images/auto-msg-bg.svg" class="auto-msg-bg">
+
+        <div class="text-overlay auto-msg">
+            <p class="auto-msg">Every day, you make a difference. We're proud to have you on our team! Keep up the great work.</p>
+            <p class="signature">– Bondly</p>
+        </div>
+
+        <p class="log-auto-msg">Automated message</p>
     </div>
 </body>
 </html>

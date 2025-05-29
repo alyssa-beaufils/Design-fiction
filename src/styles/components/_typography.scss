@@ -1,6 +1,8 @@
 .text-big{ @include font-size-responsive(20px, 24px, 32px); }
 .username{ @include font-size-responsive(20px, 24px, 32px); }
 .msg{ @include font-size-responsive(16px, 24px, 32px); }
+.auto-msg{ @include font-size-responsive(16px, 18px, 32px); }
+.signature{ @include font-size-responsive(16px, 18px, 24px); }
 .fake-placeholder{ @include font-size-responsive(14px, 24px, 32px); }
 .title-big{ @include font-size-responsive(24px, 32px, 36px); }
 .title-panel{ @include font-size-responsive(24px, 26px, 32px); }
@@ -9,9 +11,16 @@
 .status-title{ @include font-size-responsive(14px, 18px, 20px); }
 .status-title-diff{ @include font-size-responsive(14px, 18px, 20px); }
 .text-big-panel{ @include font-size-responsive(20px, 24px, 32px); }
+.title-table{ @include font-size-responsive(14px, 20px, 24px); }
+.file-id{ @include font-size-responsive(14px, 16px, 18px); }
+.anomaly-type{ @include font-size-responsive(12px, 16px, 18px); }
+.priority-high{ @include font-size-responsive(14px, 16px, 18px); }
+.priority-medium{ @include font-size-responsive(14px, 16px, 18px); }
 .text-nav{ @include font-size-responsive(18px, 18px, 20px); }
 .log{ @include font-size-responsive(12px, 14px, 16px); }
+.log-auto-msg{ @include font-size-responsive(14px, 14px, 18px); }
 .feedback{ @include font-size-responsive(14px, 16px, 16px); }
+.confidential-note{ @include font-size-responsive(14px, 18px, 18px); }
 p{ @include font-size-responsive(16px, 18px, 18px); }
 
 .text-big{
@@ -99,7 +108,55 @@ p{ @include font-size-responsive(16px, 18px, 18px); }
   font-weight: 400;
   font-style: normal;
   margin-left: 10vw;
-  margin-top: 48px;
+  margin-top: 32px;
+}
+
+.title-table{
+  font-family: $font-tertiary;
+  color: $color-pink;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+
+.file-id{
+  font-family: $font-tertiary;
+  color: $color-pink;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+  padding-top: 48px;
+  padding-bottom: 16px;
+}
+
+.anomaly-type{
+  font-family: $font-secondary;
+  color: $color-tertiary;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.priority-high{
+  font-family: $font-secondary;
+  color: $color-red;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.priority-medium{
+  font-family: $font-secondary;
+  color: $color-orange;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .text-nav{
@@ -135,4 +192,44 @@ p{
   color: $color-tertiary;
   font-weight: 400;
   font-style: normal;
+  margin-left: 5px;
+}
+
+.confidential-note{
+  font-family: $font-secondary;
+  color: $color-tertiary;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.auto-msg{
+  font-family: $font-secondary;
+  color: $color-tertiary;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 5vw;
+}
+
+.signature{
+  font-family: $font-secondary;
+  color: $color-tertiary;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 5vw;
+}
+
+.log-auto-msg{
+  font-family: $font-tertiary;
+  color: $color-tertiary;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+  margin-right: 15vw;
+  margin-bottom: 100px;
+
+  @include responsive(tablet) {
+    margin-right: 25vw;
+  }
 }

@@ -105,23 +105,23 @@
     padding: 1px;
 }
 
-.danger-icon{
-    width: 16px;
-    height: 14px;
-
-    @include responsive(tablet) {
-    width: 20px;
-    height: 16px;
-  }
-
-    @include responsive(desktop) {
-    width: 24px;
-    height: 22px;
-  }
-}
-
 .msg{
     background-color: $color-tertiary;
     padding: 12px;
     border-radius: 8px;
+}
+
+thead th {
+  padding-top: 48px;
+}
+
+.table-mobile-ui th,
+.table-mobile-ui td {
+  border-top: 1px solid $color-tertiary;
+}
+
+.table-mobile-ui th.first,
+.table-mobile-ui td.first {
+  border-top: none;
+  padding-top: 0;
 }
