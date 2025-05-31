@@ -1,8 +1,8 @@
 .text-big{ @include font-size-responsive(20px, 24px, 32px); }
 .username{ @include font-size-responsive(20px, 24px, 32px); }
 .msg{ @include font-size-responsive(16px, 24px, 32px); }
-.auto-msg{ @include font-size-responsive(16px, 18px, 32px); }
-.signature{ @include font-size-responsive(16px, 18px, 24px); }
+.auto-msg{ @include font-size-responsive(16px, 18px, 18px); }
+.signature{ @include font-size-responsive(16px, 18px, 18px); }
 .fake-placeholder{ @include font-size-responsive(14px, 24px, 32px); }
 .title-big{ @include font-size-responsive(24px, 32px, 36px); }
 .title-panel{ @include font-size-responsive(24px, 26px, 32px); }
@@ -18,11 +18,24 @@
 .priority-medium{ @include font-size-responsive(14px, 16px, 18px); }
 .text-nav{ @include font-size-responsive(18px, 18px, 20px); }
 .log{ @include font-size-responsive(12px, 14px, 16px); }
-.log-auto-msg{ @include font-size-responsive(14px, 14px, 18px); }
+.log-auto-msg{ @include font-size-responsive(14px, 14px, 16px); }
 .feedback{ @include font-size-responsive(14px, 16px, 16px); }
 .confidential-note{ @include font-size-responsive(14px, 18px, 18px); }
+.title-nav{ @include font-size-responsive(14px, 18px, 36px); }
 p{ @include font-size-responsive(16px, 18px, 18px); }
 
+.title-nav{
+  font-family: $font-primary;
+  color: $color-secondary;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 3vw;
+  display: none;
+
+  @include responsive(desktop) {
+    display: block;
+  }
+}
 .text-big{
   font-family: $font-primary;
   color: $color-secondary;
@@ -67,6 +80,10 @@ p{ @include font-size-responsive(16px, 18px, 18px); }
   font-style: normal;
   margin-left: 10vw;
   margin-top: 128px;
+
+  @include responsive(desktop) {
+    margin-left: 37vw;
+    }
 }
 
 .file-title{
@@ -210,6 +227,10 @@ p{
   font-weight: 400;
   font-style: normal;
   margin-left: 5vw;
+
+  @include responsive(desktop) {
+    margin-right: 25vw;
+  }
 }
 
 .signature{
@@ -231,5 +252,12 @@ p{
 
   @include responsive(tablet) {
     margin-right: 25vw;
+  }
+
+  @include responsive(desktop) {
+    margin-left: 13vw;
+    margin-top: 2vw;
+    position: absolute;
+    z-index: 10;
   }
 }

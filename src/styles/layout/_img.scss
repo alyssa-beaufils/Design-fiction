@@ -78,6 +78,33 @@
     width: 90%;
     height: 100%;
     margin-left: 5vw;
+    display : block;
+
+    @include responsive(tablet) {
+    display: none;
+    }
+
+    @include responsive(desktop) {
+    display: none;
+    }
+}
+
+.panel-desktop{
+    width: 90%;
+    height: 100%;
+    margin-left: 5vw;
+    display : none;
+
+    @include responsive(tablet) {
+    display: none;
+  }
+
+    @include responsive(desktop) {
+    display: block;
+    width: 60%;
+    height: 100%;
+    margin-left: 35vw;
+  }
 }
 
 .auto-msg-bg{
@@ -90,6 +117,14 @@
     width: 50%;
     height: 100%;
     margin-left: 25vw;
+  }
+
+  @include responsive(desktop) {
+    width: 22%;
+    height: 100%;
+    margin-left: 3vw;
+    margin-top: -13vw;
+    z-index: 10;
   }
 }
 
