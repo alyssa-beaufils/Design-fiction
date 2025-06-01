@@ -138,3 +138,26 @@
             });
         });
     }
+
+//SCRIPT POUR CACHER MENU SUR ORDI
+
+const pages = ["/user-list.html", "/user-profile.html"];
+const menuNav = document.getElementById("menu");
+
+function toggleMenuOnResize() {
+    const currentPage = window.location.pathname;
+
+    if (window.innerWidth >= 1440 && pages.includes(currentPage)) {
+        if (menu) {
+            menu.style.display = "none";
+        }
+    } else {
+    
+        if (menu) {
+            menu.style.display = "";
+        }
+    }
+}
+
+window.addEventListener("DOMContentLoaded", toggleMenuOnResize);
+window.addEventListener("resize", toggleMenuOnResize);

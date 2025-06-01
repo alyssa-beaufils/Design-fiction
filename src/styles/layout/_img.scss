@@ -89,6 +89,21 @@
     }
 }
 
+.panel-tablet{
+    width: 90%;
+    height: 100%;
+    margin-left: 5vw;
+    display : none;
+
+    @include responsive(tablet) {
+    display: block;
+  }
+
+  @include responsive(desktop) {
+    display: none;
+  }
+}
+
 .panel-desktop{
     width: 90%;
     height: 100%;
@@ -97,7 +112,7 @@
 
     @include responsive(tablet) {
     display: none;
-  }
+    }
 
     @include responsive(desktop) {
     display: block;
