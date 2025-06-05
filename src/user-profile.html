@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BONDLY - HOME</title>
+  <title>BONDLY - User Profile</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <meta name="description" content="">
-  <!-- Meta Partage -->
-  <!-- Favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Meta Partage -->
+  <meta property="og:site_name" content="Design Fiction - Bondly" >
+  <meta property="og:title" content="Design Fiction" >
+  <meta property="og:description" content="A Glimpse into the Future — and What It Leaves Behind" >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="DesignFiction.alyssabeaufils.be">
+  <meta property="og:image" content="assets/images/favicon-32x32.svg">
+  <meta property="og:image:width" content="1800">
+  <meta property="og:image:height" content="945">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/site.webmanifest">
+  
+  <!-- Fonts -->
   <link rel="stylesheet" href="styles/app.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,6 +60,41 @@
     <div class="bg-color">
         <h1 class="title-big">FILE #0012</h1>
     </div>
+
+    <section class="user-info-panel">
+
+        <div class="user-panel-desktop-container">
+            <img src="../assets/images/user-panel-mobile.svg" alt="User's private information" class="user-panel-mobile"/>
+            <img src="../assets/images/user-panel-desktop.svg" alt="User's private information" class="user-panel-desktop"/>
+            <img src="../assets/images/user-panel-tablet.svg" alt="User's private information" class="user-panel-tablet"/>
+        </div>
+        
+        <h1 class="title-big-sys">SYSTEM COMMENTS</h1>
+        <div class="user-action-container">
+            
+            <div class="system-msg-container">
+                <img src="../assets/images/auto-msg-bg-02-desktop.svg" alt="System message background" class="system-msg-desktop"/>
+                <img src="../assets/images/auto-msg-bg-02-tablet.svg" alt="System message background" class="system-msg-tablet"/>
+
+                <div class="system-msg-text-container">
+                <p class="system-msg">Initial sociability level high, but rapid decline over 72 hours.</p>
+                <p class="system-msg">Hypothesis: Gradual disengagement following a missed interaction with a highly compatible profile (estimated affinity rate of 93%).</p>
+                </div>
+            </div>
+
+            <div class="user-action">
+                <img src="../assets/images/user-action-btn.svg" class="btn-action" id="btn-action"/>
+            </div>
+        </div>
+
+        <div class="options" id="options">
+            <button class="option" data-choice="A">> Targeted suggestion of a user geographically close + common likes</button>
+            <button class="option" data-choice="B">> Send an encouraging message</button>
+        </div>
+
+        <div class="message" id="message-action"></div>
+
+    </section>
 
 </body>
 </html>

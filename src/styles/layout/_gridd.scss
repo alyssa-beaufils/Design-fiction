@@ -174,3 +174,73 @@
 .user-info{
     margin-left: 16px;
 }
+
+.user-info-panel{
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    margin-bottom: 78px;
+}
+
+.user-panel-desktop-container{
+    width: 100%;
+
+    @include responsive(desktop) {
+    display: flex;
+    width: 100%;
+    margin-left: 5vw;
+    margin-bottom: 64px;
+    }
+}
+
+.user-action-container{
+    display: flex;
+    flex-direction: column;
+
+    @include responsive(tablet) {
+    display: flex;
+    flex-direction: row;
+    }
+
+    @include responsive(desktop) {
+    display: flex;
+    flex-direction: row;
+    }
+}
+
+.system-msg-container{
+    display: flex;
+}
+
+.user-action{
+    display: flex;
+}
+
+.system-msg-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.system-msg-text-container{
+
+    position: absolute;
+    width: 85%;
+    margin-left: 15vw;
+    margin-top: 5vw;
+
+    @include responsive(tablet) {
+        position: absolute;
+        width: 55%;
+        margin-left: 15vw;
+        margin-top: 4vw;
+    }
+
+    @include responsive(desktop) {
+    position: absolute;
+    width: 60%;
+    margin-left: 12vw;
+    margin-top: 2vw;
+    }
+}
+

@@ -139,7 +139,7 @@
         });
     }
 
-//SCRIPT POUR CACHER MENU SUR ORDI
+//SCRIPT POUR CACHER MENU SUR ORDI POUR CERTAINES PAGES - AIDE IA
 
 const pages = ["/user-list.html", "/user-profile.html"];
 const menuNav = document.getElementById("menu");
@@ -161,3 +161,53 @@ function toggleMenuOnResize() {
 
 window.addEventListener("DOMContentLoaded", toggleMenuOnResize);
 window.addEventListener("resize", toggleMenuOnResize);
+
+//SCRIPT POUR HOVER BTN IMG
+
+    const btnImg = document.getElementById("btn-action");
+
+    if (btnImg) {
+        btnImg.addEventListener("mouseenter", () => {
+        btnImg.src = "../assets/images/user-action-btn-hover.svg";
+
+    });
+
+        btnImg.addEventListener("mouseleave", () => {
+        btnImg.src = "../assets/images/user-action-btn.svg";
+    });
+    }
+
+//SCRIPT POUR CHOIX
+
+    const image = document.getElementById("btn-action");
+    const options = document.getElementById("options");
+    const messageOption = document.getElementById("message-action");
+
+    if (image && options && messageOption) {
+        image.addEventListener("click", () => {
+        options.classList.add("visible");
+        message.textContent = ""; // Reset le message si on clique à nouveau
+    });
+
+document.querySelectorAll(".option").forEach(button => {
+  button.addEventListener("click", () => {
+    const choice = button.dataset.choice;
+    if (choice === "A") {
+      message.textContent = "Hannah, who’s nearby, shares your love for Blade Runner 2049 and quiet Sundays. Feel like chatting? - Sent to Cassian Rutherford";
+      message.style.opacity = "1";
+    } else if (choice === "B") {
+      message.textContent = "Hey, just a reminder that you’re not alone. When you’re ready, jump in and chat — we’d love to hear from you. - Sent to Cassian Rutherford";
+      message.style.opacity = "1";
+    }
+    options.classList.remove("visible");
+
+    setTimeout(() => {
+        message.style.opacity = "0";
+    }, 6000);
+
+    setTimeout(() => {
+    window.location.href = "/error.html"; // Redirige vers la nouvelle page
+    }, 7000);
+  });
+});
+}

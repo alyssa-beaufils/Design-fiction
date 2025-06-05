@@ -22,7 +22,33 @@
 .feedback{ @include font-size-responsive(14px, 16px, 16px); }
 .confidential-note{ @include font-size-responsive(14px, 18px, 18px); }
 .title-nav{ @include font-size-responsive(14px, 18px, 36px); }
+.system-msg{ @include font-size-responsive(16px, 18px, 18px); }
+.title-big-sys{ @include font-size-responsive(18px, 32px, 36px); }
+.error-title{ @include font-size-responsive(16px, 18px, 18px); }
 p{ @include font-size-responsive(16px, 18px, 18px); }
+
+.error-title{
+  font-family: $font-tertiary;
+  color: $color-red;
+  background-color: $color-primary;
+  background-size: 100%;
+  border: 1px solid $color-secondary;
+  padding: 20px;
+  width: 60%;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 17vw;
+  margin-top: 45vw;
+
+  @include responsive(tablet) {
+    margin-top: 30vw;
+  }
+
+  @include responsive(desktop) {
+    margin-left: 20vw;
+    margin-top: 19vw;
+  }
+}
 
 .title-nav{
   font-family: $font-primary;
@@ -260,4 +286,28 @@ p{
     position: absolute;
     z-index: 10;
   }
+}
+
+.system-msg{
+  
+  font-family: $font-secondary;
+  color: $color-tertiary;
+  font-weight: 400;
+  font-style: normal;
+  width: 80%;
+  
+  @include responsive(tablet) {
+  width: 70%;
+  }
+  @include responsive(desktop) {
+  width: 70%;
+  }
+}
+
+.title-big-sys{
+  font-family: $font-primary;
+  color: $color-secondary;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 9vw;
 }

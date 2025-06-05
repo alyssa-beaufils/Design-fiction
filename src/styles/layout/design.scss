@@ -125,3 +125,59 @@ thead th {
   border-top: none;
   padding-top: 0;
 }
+
+.options {
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left: 20vw;
+    gap: 16px;
+    width: 60%;
+    opacity: 0;
+    pointer-events: none;
+
+  @include responsive(tablet) {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left: 29vw;
+    gap: 16px;
+    width: 40%;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @include responsive(desktop) {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left: 29vw;
+    gap: 16px;
+    width: 40%;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+  .option{
+    padding: 10px 20px;
+    font-family: $font-secondary;
+    font-size: 18px;
+    border: 1px solid $color-secondary;
+    background-color: #381132;
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-tertiary;
+      border: 1px solid $color-tertiary;
+      }
+  }
+
+  .options.visible {
+    pointer-events: all;
+    opacity: 1;
+  }
