@@ -206,7 +206,7 @@ document.querySelectorAll(".option").forEach(button => {
     }, 6000);
 
     setTimeout(() => {
-    window.location.href = "/error.html"; // Redirige vers la nouvelle page
+    window.location.href = "error.html"; // Redirige vers la nouvelle page
     }, 7000);
   });
 });
