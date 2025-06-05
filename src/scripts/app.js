@@ -9,7 +9,7 @@
         if (clickArea) {
             clickArea.addEventListener("click", function(e) {
                 e.preventDefault();
-                window.location.href = "../login.html";
+                window.location.href = "login.html";
             }); 
         }  
     });
@@ -51,7 +51,7 @@
             form.querySelector("button[type='submit']").disabled = true;
 
             setTimeout(() => {
-                window.location.href = "../home.html";
+                window.location.href = "home.html";
             }, 3000); // délai de 1.5 seconde pour que le message s'affiche
         }
 
@@ -120,7 +120,7 @@
 
         card.addEventListener("click", function(e) {
             e.preventDefault();
-            window.location.href = "../user-profile.html";
+            window.location.href = "user-profile.html";
         });
     }
 
@@ -168,12 +168,12 @@ window.addEventListener("resize", toggleMenuOnResize);
 
     if (btnImg) {
         btnImg.addEventListener("mouseenter", () => {
-        btnImg.src = "../assets/images/user-action-btn-hover.svg";
+        btnImg.src = "assets/images/user-action-btn-hover.svg";
 
     });
 
         btnImg.addEventListener("mouseleave", () => {
-        btnImg.src = "../assets/images/user-action-btn.svg";
+        btnImg.src = "assets/images/user-action-btn.svg";
     });
     }
 
