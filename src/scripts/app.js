@@ -145,7 +145,7 @@ const pages = ["user-list.html", "user-profile.html"];
 const menuNav = document.getElementById("menu");
 
 function toggleMenuOnResize() {
-    const currentPage = window.location.pathname;
+    const currentPage = window.location.pathname.split("/").pop();
 
     if (window.innerWidth >= 1440 && pages.includes(currentPage)) {
         if (menu) {
