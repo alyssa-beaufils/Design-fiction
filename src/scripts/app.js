@@ -141,7 +141,7 @@
 
 //SCRIPT POUR CACHER MENU SUR ORDI POUR CERTAINES PAGES - AIDE IA
 
-const pages = ["/user-list.html", "/user-profile.html"];
+const pages = ["user-list.html", "user-profile.html"];
 const menuNav = document.getElementById("menu");
 
 function toggleMenuOnResize() {
